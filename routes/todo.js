@@ -6,12 +6,11 @@ const router = express.Router();
 
 
 
-/*
 // Get all todo for specific user
-router.get('/todo/:id', async (req, res) => {
+router.get('/usertodo/:id', async (req, res) => {
     const todo=await User.findById(req.params.id).populate('todo').select('todo')
     res.json(todo)
-});*/
+});
 
 
 //Add new todo.for specific user

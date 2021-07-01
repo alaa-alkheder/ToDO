@@ -1,0 +1,124 @@
+{
+	"variables": [],
+	"info": {
+		"name": "TODO",
+		"_postman_id": "28689dbe-e764-560b-2a38-6422e9a7e1b4",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add user",
+			"request": {
+				"url": "http://localhost:3000/api/users/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"alaaalkheder1\",\n\t\"email\":\"alaa-alkheder1@outlook.com\",\n\t\"password\":\"12345678\",\n\t\"phone\":\"0932623711\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an existing todo for specific user.",
+			"request": {
+				"url": "http://localhost:3000/api/todo/delete",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"todoId\":\"60dd1b8337c30561987af7ad\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update an existing todo for specific user.",
+			"request": {
+				"url": "http://localhost:3000/api/todo/edit",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\":\"3nd title\",\n\t\"body\":\"only test\",\n\t\"todoId\":\"60dd1408ce32851e9883dea0\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "get all users",
+			"request": {
+				"url": "http://localhost:3000/api/users/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get todo information for specific user",
+			"request": {
+				"url": "http://localhost:3000/api/todo/get/",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add new todo.for specific user",
+			"request": {
+				"url": "http://localhost:3000/api/todo/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\":\"1st todo\",\n\t\"body\":\" test todo\",\n\t\"user\":\"60dd10ce4f7a2b1638735ebe\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all todo for specific user",
+			"request": {
+				"url": "http://localhost:3000/api/todo/usertodo/60dd10ce4f7a2b1638735ebe",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
